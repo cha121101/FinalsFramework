@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{ route('store.user')}}" method="post">
+    <form action="{{ route('store.user')}}" method="post" >
         @csrf
-        <label for="fullname">
-            <p>Fullname</p> <span><input type="text" name="fullname"></span>
-        </label>
+        <p class="" >Student name</p><input type="text" name="fullname" class="inline">
+        <p class="" >Year and section</p><input type="text" name="yearandsection" class="inline">
+        <p class="" >Age</p><input type="text" name="age" class="inline">
         <button type="submit"> Create User</button>
     </form>
 </body>

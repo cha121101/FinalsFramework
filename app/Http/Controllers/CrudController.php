@@ -30,9 +30,10 @@ class CrudController extends Controller
      */
     public function store(Request $request)
     {
-        //
         userData::create([
-            'fullname'=> $request->fullname
+            'fullname'=> $request->fullname,
+            'age' => $request->age,
+            'yearandsection' => $request->yearandsection
         ]);
         
         return redirect()->route('home');
@@ -63,7 +64,12 @@ class CrudController extends Controller
         $fullname = $request->fullname;
         DB::table('user_data')
             ->where('id', $request->id)
-            ->update(['fullname' => $request->fullname]);
+            ->update(
+                [
+                    'fullname' => $request->fullname,
+                    'age' => $request->age,
+                    'yearandsection' => $request->yearandsection
+                ]);
         return redirect()->route('home');
     }
 

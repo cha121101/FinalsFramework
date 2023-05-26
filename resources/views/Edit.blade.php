@@ -12,7 +12,13 @@
         <form action="{{ route('update.user' , ['id' => $value->id]) }}" method="post">
             @csrf
             <label for="">
-                <p>Name:</p> <span><input type="text" name="fullname" value="{{ $value->fullname }}"></span>
+                <p>Student name:</p> <span><input type="text" name="fullname" value="{{ $value->fullname }}"></span>
+            </label>
+            <label for="">
+                <p>Age:</p> <span><input type="text" name="age" value="{{ $value->age }}"></span>
+            </label>
+            <label for="">
+                <p>Year and section:</p> <span><input type="text" name="yearandsection" value="{{ $value->yearandsection }}"></span>
             </label>
             <button type="submit">Change Name</button>
         </form>

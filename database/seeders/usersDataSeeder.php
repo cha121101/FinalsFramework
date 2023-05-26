@@ -15,10 +15,26 @@ class usersDataSeeder extends Seeder
     {
         //
         $usersdata =  [
-            ['fullname' => 'Charles Gamboa'],
-            ['fullname'=> 'Gene Carlo Sigua'],
-            ['fullname'=> 'Steven Villan'],
-            ['fullname' => 'Gerome Gomez']
+            [
+                'fullname' => 'Charles Gamboa',
+                'age' => 21,
+                'yearandsection' => 'BSIT-3B'
+            ],
+            [
+                'fullname'=> 'Gene Carlo Sigua',
+                'age' => 21,
+                'yearandsection' => 'BSIT-3B'
+            
+            ],
+            [
+                'fullname'=> 'Steven Villan',
+                'age' => 21,
+                'yearandsection' => 'BSIT-3B'
+            ],
+            [
+                'fullname' => 'Gerome Gomez',
+                'age' => 21,
+                'yearandsection' => 'BSIT-3B']
         ];
         
         foreach($usersdata as $keys => $value){
