@@ -10,7 +10,7 @@
 <body>
     <center>
         <header>
-            <h1 class="font-extrabold pb-10 pt-2">Rest Method</h1>
+            <h1 class="font-extrabold pb-10 mt-10 text-3xl">Rest Method</h1>
         </header>
     </center>
 
